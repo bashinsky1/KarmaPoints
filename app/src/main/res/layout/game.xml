@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="@dimen/paddingLayout"
+        android:paddingRight="@dimen/paddingLayout"
+        android:paddingTop="@dimen/paddingLayout"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/level"
+                android:textSize="@dimen/btn_Size"
+                android:id="@+id/levelView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                android:id="@+id/scoreView"
+                android:textSize="@dimen/btn_Size"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/paddingLayout" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result_table"
+            android:background="@drawable/k_button"
+            android:textColor="@color/black"
+            android:id="@+id/btn_infoTable" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_above="@+id/btn_picker"
+        android:id="@+id/response_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/point"
+            android:id="@+id/textPoint"
+            android:textSize ="@dimen/textViewSize"
+            android:textColor="@color/darkblue"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/point"
+        android:id="@+id/btn_picker"
+        android:textSize="@dimen/btn_Size"
+        android:background="@drawable/k_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/paddingLayout"
+        android:layout_marginRight="@dimen/paddingLayout"
+        android:layout_marginBottom="@dimen/paddingLayout"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>

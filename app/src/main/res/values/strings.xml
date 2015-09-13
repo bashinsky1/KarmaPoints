@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Karma Points</string>
+    <string name="karma_button">Clear Karma</string>
+    <string name="result_table">\?</string>
+    <string name="level">Level: </string>
+    <string name="score">Score: </string>
+    <string name="plus">+</string>
+    <string name="point">Point</string>
+    <string name="finish">Your Karma cleared</string>
+    <string name="refresh">Start again</string>
+    <string name="network_unavailable_message">Mobile Network Not Available</string>
+    <string name="ERROR">ERROR: JSON not available</string>
+</resources>
